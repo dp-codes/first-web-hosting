@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {{>headerlinks}}
+
+</head>
+<body>
+   {{>navbar}} 
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main-content">
+                    <form class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitbtn">
+                    </form>
+                </div>
+              <div class="tempinformation">
+                <div class="top-layer">
+                    <p id="today_day"></p>
+                    <p id="today_time"></p>
+                </div>
+                <div class="main-layer">
+                    <p id="locate"></p>
+                    <div class="middle-layer data_hide">
+                         <p id="temp"><span id="temper">0</span><sup>o</sup>C</p>
+                         <p id="temp-status"></p>
+                    </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    </div>
+
+ 
+    {{>footers}}
+    <script src="js/main.js"></script>
+</body>
+</html>
